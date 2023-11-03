@@ -1,6 +1,7 @@
 import { defineConfig } from '@umijs/max';
 
 export default defineConfig({
+  base: 'micro',
   antd: {},
   access: {},
   model: {},
@@ -30,6 +31,8 @@ export default defineConfig({
       component: './Table',
     },
   ],
+  qiankun: {
+    slave: {},
+  },
   npmClient: 'pnpm',
 });
-
